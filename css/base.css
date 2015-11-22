@@ -424,7 +424,7 @@ td,
 th {
   padding: 0;
 }
-body,html{margin:0;padding:0;width:100%;height:100%;}
+body,html{margin:0;padding:0;width:100%;height:100%;overflow: hidden;}
 ul{
   margin:0;
   padding:0;
@@ -434,9 +434,6 @@ a:focus,a:active,a:hover{outline:0}
 html{font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:14px;line-height: 1.42857143;font-weight:400;background:#fff}
 ::selection{color:#fee818;background:#000}
 ::-moz-selection{color:#fee818;background:#000}
-
-
-
 
 
 
@@ -463,9 +460,10 @@ html{font-family:'Open Sans',Arial,Helvetica,sans-serif;font-size:14px;line-heig
 .page-menu {
     width: 255px;
     right: 0;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
+    bottom: 0;
     height: 100%;
     background: #262626;
     color: #fff;
